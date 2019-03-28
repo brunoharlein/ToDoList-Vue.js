@@ -1,0 +1,18 @@
+<div id="app">
+  <!-- insertion de l'input et création du v-model  -->
+  <input v-model="nouvelleTache" placeholder="test" />
+  <!-- insertion du boutton et du @click -->
+  <button @click="ajout">ajouter</button>
+  <!-- ul-li -->
+  <ul>
+    <!-- boucle dans le tableau tasks et affiche dans task -->
+    <li v-for="task in tasks">
+      {{ task }}
+    </li>
+  </ul>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="main.js"></script>
